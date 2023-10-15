@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    --s: 150px; /* control the size */
+    --c1: #FF847C;
+    --c2: #E84A5F;
+    --c3: #FECEA8;
+    --c4: #99B898;
+    
+    background:
+      conic-gradient(from  45deg at 75% 75%, var(--c3) 90deg,var(--c1) 0 180deg,#0000 0),
+      conic-gradient(from -45deg at 25% 25%, var(--c3) 90deg,#0000 0),
+      conic-gradient(from -45deg at 50% 100%,#0000 180deg,var(--c3) 0),
+      conic-gradient(from -45deg,var(--c1) 90deg, var(--c2) 0 225deg,var(--c4) 0);
+    background-size: var(--s) var(--s); 
+}
+
+.container {
+    margin: 56px auto;
+    width: 1180px;
+    height: 90vh;
+    border-radius: 12px;
+    background-color: #282828;
+    z-index: 1;
+
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+  
